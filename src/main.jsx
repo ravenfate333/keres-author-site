@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import Sample from './pages/Sample.jsx';
 
 //adding to implement react-router-dom
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
@@ -11,6 +12,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>
+  },
+  // demonstrating how to add additional pages after the home page 
+  {
+    path: "/sample",
+    element: <Sample/>
   }
 ]);
 
