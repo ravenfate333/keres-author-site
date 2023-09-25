@@ -7,6 +7,8 @@ import Bio from "./pages/Bio.jsx";
 import CrackedCoffinsSeries from "./pages/CrackedCoffinsSeries.jsx";
 import Contact from "./pages/Contact.jsx";
 import Links from "./pages/Links.jsx";
+import "./styles/global.scss";
+import "./styles/nav.scss";
 
 //adding to implement react-router-dom
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

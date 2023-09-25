@@ -1,0 +1,29 @@
+@import "global";
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem 0.5rem;
+
+  color: $fontColor;
+  list-style-type: none;
+  text-decoration: none;
+
+  ul {
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $fontColor;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+}
