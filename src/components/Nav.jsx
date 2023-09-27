@@ -9,12 +9,7 @@ function Nav() {
           <Link to={'/'}>HOME</Link>
         </li>
         <li>
-          BOOKS
-          <ul>
-            <li>
-              <Link to={'/CrackedCoffins'}>THE CRACKED COFFINS SERIES</Link>
-            </li>
-          </ul>
+          <Link to={'/CrackedCoffins'}>THE CRACKED COFFINS SERIES</Link>
         </li>
         <li>
           <Link to={'/Bio'}>BIO</Link>
