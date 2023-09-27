@@ -1,6 +1,6 @@
 @import "global";
 
-.nav-links {
+.mobile-nav {
   display: flex;
   padding: 1rem 0.5rem;
   flex-direction: column;
@@ -16,10 +16,19 @@
   }
 }
 
+.desktop-nav {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
-  .nav-links {
+  .desktop-nav {
+    display: flex;
     flex-direction: row;
     justify-content: center;
 
+  }
+
+  .mobile-nav {
+    display: none;
   }
 }
