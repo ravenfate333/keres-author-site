@@ -1,14 +1,29 @@
 @import "global";
 
 .mobile-nav {
+  display: block;
+  width: 100%;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: black; /* TODO Overlay nav */
+
+}
+
+.hamburger-react {
+  /* z-index: 999; */
+}
+
+.nav-links {
   display: flex;
-  padding: 1rem 0.5rem;
   flex-direction: column;
   justify-content: space-around;
-
   color: $fontColor;
   list-style-type: none;
   text-decoration: none;
+  
 
   a {
     text-decoration: none;
@@ -22,10 +37,11 @@
 
 @media only screen and (min-width: 600px) {
   .desktop-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: block;
+  }
 
+  .nav-links {
+    flex-direction: row;
   }
 
   .mobile-nav {

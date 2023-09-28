@@ -5,9 +5,10 @@ import { useState } from "react";
 
 function MobileNav() {
   const [isOpen, setOpen] = useState(false);
+  
   return (
     <div className="mobile-nav">
-      <Hamburger toggled={isOpen} toggle={setOpen} />
+      <Hamburger label="Show menu" rounded toggled={isOpen} toggle={setOpen} />
       {isOpen ? (
       <>
       <nav className="mobile-nav">
