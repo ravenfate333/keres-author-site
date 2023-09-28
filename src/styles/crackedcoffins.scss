@@ -1,5 +1,88 @@
 @import "global";
 
+$CrackedCoffins: rgb(121, 52, 55);
+$BindingBlood: rgb(52, 67, 64);
+$HarrowedHearts: rgb(84, 62, 100);
+
+.book-collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        p {
+            align-self: flex-start;
+        }
+    }
+
+    .info-container {
+        padding: 0;
+    }
+    .blurb {
+        padding: 0rem;
+    }
+}
+
+.cracked-coffins {
+    background-color: $CrackedCoffins;
+}
+
+.binding-blood {
+    background-color: $BindingBlood;
+}
+
+.harrowed-hearts {
+    background-color: $HarrowedHearts;
+}
+
 .book-cover {
-    max-width: 20%;
+    max-width: 75%;
+}
+
+@media only screen and (min-width: $layoutBreakoutSmall) {
+    main {
+        margin: 0rem 5rem;
+    }
+
+    .book {
+
+        div {
+            flex-direction: row;  
+        }
+
+        .info-container {
+            flex-direction: column;
+            align-self: flex-start;
+            padding: 1.5rem;
+
+            .blurb {
+                flex-direction: column;
+                
+                
+            }
+
+        }
+        
+
+    }
+
+    .book-cover {
+        max-width: 35%;
+    }
 }

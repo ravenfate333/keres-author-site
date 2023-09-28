@@ -5,4 +5,12 @@ $layoutBreakoutSmall: 600px;
 body {
     background-color: $backgroundColor;
     color: $fontColor;
+    font-size: 16px;
+
+}
+
+@media only screen and (min-width: $layoutBreakoutSmall) {
+    body {
+        margin: 1rem 2rem;
+    }
 }
