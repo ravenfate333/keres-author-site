@@ -15,14 +15,18 @@ const goodreads = <FontAwesomeIcon icon={faGoodreads} />;
 function SocialLinks() {
   return (
     <>
-      <a href="https://amazon.com/author/beronikakeres">{amazon}</a>
-      <a href="https://tiktok.com/@beronikakeres">{tiktok}</a>
-      <a href="https://instagram.com/beronikakeres">{instagram}</a>
-      <a href="https://facebook.com/AuthorBeronikaKeres">{facebook}</a>
-      <a href="https://www.goodreads.com/author/show/20537997.Beronika_Keres">
-        {goodreads}
-      </a>
-      
+      <div style={{ fontSize: "1.25rem" }}>
+        <a href="https://amazon.com/author/beronikakeres">{amazon}</a>
+        &nbsp;&nbsp;
+        <a href="https://tiktok.com/@beronikakeres">{tiktok}</a>&nbsp;&nbsp;
+        <a href="https://instagram.com/beronikakeres">{instagram}</a>
+        &nbsp;&nbsp;
+        <a href="https://facebook.com/AuthorBeronikaKeres">{facebook}</a>
+        &nbsp;&nbsp;
+        <a href="https://www.goodreads.com/author/show/20537997.Beronika_Keres">
+          {goodreads}
+        </a>
+      </div>
       <p>Social Links</p>
     </>
   );
