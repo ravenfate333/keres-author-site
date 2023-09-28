@@ -1,20 +1,16 @@
 import { Link } from "react-router-dom";
 
-function Nav() {
+
+function DesktopNav() {
   return (
     <>
-    <nav>
-      <ul className="nav-items">
+    <nav className="desktop-nav">
+      <ul className="nav-links">
         <li>
           <Link to={'/'}>HOME</Link>
         </li>
         <li>
-          BOOKS
-          <ul>
-            <li>
-              <Link to={'/CrackedCoffins'}>THE CRACKED COFFINS SERIES</Link>
-            </li>
-          </ul>
+          <Link to={'/CrackedCoffins'}>THE CRACKED COFFINS SERIES</Link>
         </li>
         <li>
           <Link to={'/Bio'}>BIO</Link>
@@ -28,4 +24,4 @@ function Nav() {
   )
 }
 
-export default Nav;
+export default DesktopNav;

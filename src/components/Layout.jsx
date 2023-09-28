@@ -1,14 +1,16 @@
 import { Outlet } from "react-router-dom";
-import Nav from "./Nav";
+import DesktopNav from "./DesktopNav";
+import MobileNav from "./MobileNav";
 import Footer from "./Footer";
 
 const Layout = () => {
   return (
-    <div>
-      <Nav />
+    <>
+      <MobileNav />
+      <DesktopNav />
       <Outlet />
       <Footer />
-    </div>
+    </>
   );
 };
 
