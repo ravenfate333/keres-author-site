@@ -5,6 +5,7 @@ import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faGoodreads } from '@fortawesome/free-brands-svg-icons';
+import bookbub from '../assets/images/bookbub.webp';
 
 const amazon = <FontAwesomeIcon icon={faAmazon} />;
 const tiktok = <FontAwesomeIcon icon={faTiktok} />;
@@ -15,19 +16,45 @@ const goodreads = <FontAwesomeIcon icon={faGoodreads} />;
 function SocialLinks() {
   return (
     <>
-      <div style={{ fontSize: "1.25rem" }}>
-        <a href="https://amazon.com/author/beronikakeres">{amazon}</a>
+      <div style={{ fontSize: "1.6rem", display:"flex", alignItems:"center" }}>
+        <a
+          style={{ color: "white" }}
+          href="https://amazon.com/author/beronikakeres"
+        >
+          {amazon}
+        </a>
         &nbsp;&nbsp;
-        <a href="https://tiktok.com/@beronikakeres">{tiktok}</a>&nbsp;&nbsp;
-        <a href="https://instagram.com/beronikakeres">{instagram}</a>
+        <a style={{ color: "white" }} href="https://tiktok.com/@beronikakeres">
+          {tiktok}
+        </a>
         &nbsp;&nbsp;
-        <a href="https://facebook.com/AuthorBeronikaKeres">{facebook}</a>
+        <a
+          style={{ color: "white" }}
+          href="https://instagram.com/beronikakeres"
+        >
+          {instagram}
+        </a>
         &nbsp;&nbsp;
-        <a href="https://www.goodreads.com/author/show/20537997.Beronika_Keres">
+        <a
+          style={{ color: "white" }}
+          href="https://facebook.com/AuthorBeronikaKeres"
+        >
+          {facebook}
+        </a>
+        &nbsp;&nbsp;
+        <a
+          style={{ color: "white" }}
+          href="https://www.goodreads.com/author/show/20537997.Beronika_Keres"
+        >
           {goodreads}
         </a>
+        <a
+          style={{ color: "white" }}
+          href="https://www.bookbub.com/authors/beronika-keres"
+        >
+          <img src={bookbub} alt="book bub icon" />
+        </a>
       </div>
-      <p>Social Links</p>
     </>
   );
 }
