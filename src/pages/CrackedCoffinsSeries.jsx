@@ -5,28 +5,39 @@ import BindingBlood from "../assets/BindingBloodCover.jpg";
 import HarrowedHearts from "../assets/HarrowedHeartsCover.jpeg";
 import Book from "../components/Book";
 
+// TODO look into geolocation for links redirection
 const retailersCrackedCoffins = [
   { label: "Amazon USA", link: "https://www.amazon.com/dp/B08GC77R79" },
   { label: "Amazon CA", link: "https://www.amazon.ca/dp/B08GC77R79" },
   { label: "Amazon UK", link: "https://www.amazon.co.uk/dp/B08GC77R79" },
-  // add rest of retailers
+  { label: "Apple", link: "https://books.apple.com/book/cracked-coffins/id1528388498"},
+  { label: "Barnes & Noble", link: "https://www.barnesandnoble.com/w/cracked-coffins-beronika-keres/1137396822"},
+  { label: "Kobo", link: "https://www.kobo.com/ca/en/ebook/cracked-coffins-1"},
+  { label: "Google Play", link: "https://play.google.com/store/books/details?id=UQ75DwAAQBAJ"},
+  { label: "More Retailers / Countries", link: "https://books2read.com/CrackedCoffins/"},
 ];
 
 const retailersBindingBlood = [
-  { label: "Amazon USA", link: "" },
-  { label: "Amazon CA", link: "" },
-  { label: "Amazon UK", link: "" },
-  // add rest of retailers
+  { label: "Amazon USA", link: "https://www.amazon.com/dp/B09K2115FP" },
+  { label: "Amazon CA", link: "https://www.amazon.ca/dp/B09K2115FP" },
+  { label: "Amazon UK", link: "https://www.amazon.co.uk/dp/B09K2115FP" },
+  { label: "Apple", link: "https://books.apple.com/book/binding-blood/id1591475291" },
+  { label: "Barnes & Noble", link: "https://www.barnesandnoble.com/w/binding-blood-beronika-keres/1140391221" },
+  { label: "Kobo", link: "https://www.kobo.com/ca/en/ebook/binding-blood-3" },
+  { label: "Google Play", link: "https://play.google.com/store/books/details/Beronika_Keres_Binding_Blood?id=UJzUEAAAQBAJ" },
+  { label: "More Retailers / Countries", link: "https://books2read.com/binding-blood-2/" },
 ];
 
 const retailersHarrowedHearts = [
-  { label: "Amazon USA", link: "" },
-  { label: "Amazon CA", link: "" },
-  {
-    label: "Amazon UK",
-    link: "",
-  },
-  // add rest of retailers
+  { label: "Amazon USA", link: "https://www.amazon.com/dp/B0CGZFT2SC" },
+  { label: "Amazon CA", link: "https://www.amazon.ca/dp/B0CGZFT2SC" },
+  { label: "Amazon UK", link: "https://www.amazon.co.uk/dp/B0CGZFT2SC"},
+  { label: "Apple", link: "https://books.apple.com/ca/book/harrowed-hearts/id6463948422" },
+  { label: "Barnes & Noble", link: "https://www.barnesandnoble.com/w/harrowed-hearts-beronika-keres/1144018711" },
+  { label: "Kobo", link: "https://www.kobo.com/ca/en/ebook/harrowed-hearts" },
+  { label: "Google Play", link: "https://play.google.com/store/books/details?id=UJzUEAAAQBAJ" },
+  { label: "More Retailers / Countries", link: "https://books2read.com/HarrowedHearts/" },
+
 ];
 
 const blurbsCrackedCoffins = [

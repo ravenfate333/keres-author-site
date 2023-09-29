@@ -43,6 +43,11 @@ main {
   }
 }
 
+.buy-buttons {
+    display: flex;
+    flex-flow: wrap;
+}
+
 .cracked-coffins {
   background-color: $CrackedCoffins;
 }
