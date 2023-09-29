@@ -4,8 +4,10 @@ import SocialLinks from './SocialLinks'
 function Footer() {
   return (
     <>
-      <h1>Fresh Start</h1>
       <SocialLinks />
+      <p>Copyright Notice?</p>
+      <p>Indie Book Vault notice</p>
+      <p>Area for Newsletter</p>
     </>
   )
 }
