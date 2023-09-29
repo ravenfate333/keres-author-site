@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function ContentWarning({ title, message }) {
   return (
@@ -12,5 +13,10 @@ function ContentWarning({ title, message }) {
     </div>
   );
 }
+
+ContentWarning.propTypes = {
+    title: PropTypes.string.isRequired,
+    message: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default ContentWarning;
