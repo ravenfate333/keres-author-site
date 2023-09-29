@@ -8,6 +8,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
 }
 
 .book-collection {
@@ -44,8 +52,8 @@ main {
 }
 
 .buy-buttons {
-    display: flex;
-    flex-flow: wrap;
+  display: flex;
+  flex-flow: wrap;
 }
 
 .cracked-coffins {
@@ -65,22 +73,25 @@ main {
 }
 
 .content-warning {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
 
-    h3 {
-        text-transform: uppercase;
-    }
+  h3 {
+    text-transform: uppercase;
+  }
 
-    p {
-        text-align: center;
-    }
+  p {
+    text-align: left;
+  }
 }
 
-
 @media only screen and (min-width: $layoutBreakoutSmall) {
+  .content-warning {
+    padding: 1rem 5rem;
+  }
+
   .book {
     flex-direction: column;
 
