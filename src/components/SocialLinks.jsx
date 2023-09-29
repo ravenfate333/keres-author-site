@@ -16,6 +16,7 @@ const goodreads = <FontAwesomeIcon icon={faGoodreads} />;
 function SocialLinks() {
   return (
     <>
+    <div style={{display: "flex", justifyContent:"end"}}>
       <div style={{ fontSize: "1.6rem", display:"flex", alignItems:"center" }}>
         <a
           style={{ color: "white" }}
@@ -55,6 +56,7 @@ function SocialLinks() {
           <img src={bookbub} alt="book bub icon" />
         </a>
       </div>
+    </div>
     </>
   );
 }
