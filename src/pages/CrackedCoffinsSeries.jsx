@@ -97,7 +97,7 @@ const booksData = [
 const contentWarningTitle = "Series Content Warning";
 const contentWarningMessage = [
   "The Cracked Coffins Series contains subjects and themes readers may find triggering or upsetting. A combination of the following content can be found in each book:",
-  "Alcohol Consumption, Assault, Child Abuse, Consensual Sexual Content (Medium-Explicit), Domestic Abuse, Drug Abuse, Drug Use, Gang Violence, Graphic Violence, Kidnapping, Prostitution, Profanity, Rape & Sexual Violence, Stalking, Suicide.",
+  "Alcohol Consumption & Abuse, Assault, Child Abuse, Domestic Abuse, Drug Abuse, Drug Use, Gang Violence, Graphic Violence, Kidnapping, Prostitution, Profanity, Rape & Sexual Violence, Stalking, Suicide.",
   "This is not an exhaustive list. Please reach out for more information about specific triggers and I will be happy to discuss any additional concerns.",
   "The Cracked Coffins Series does not promote or romanticize any listed triggering content.",
   "Consensual Sexual Content (Medium-Explicit) is present in some of the books.",
@@ -108,6 +108,7 @@ function CrackedCoffinsSeries() {
   return (
     <main>
       <h1>The Cracked Coffins Series</h1>
+      <h3>New Adult | Dark Fantasy | Thriller | Vampires</h3>
       <div className="book-collection">
         {booksData.map((book, index) => (
           <Book
@@ -115,7 +116,6 @@ function CrackedCoffinsSeries() {
             title={book.title}
             coverImage={book.coverImage}
             blurb={book.blurbs}
-            // Add trigger warning section for whole series
             retailerButtons={book.retailerButtons}
           />
         ))}
