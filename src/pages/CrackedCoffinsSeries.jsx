@@ -4,6 +4,7 @@ import CrackedCoffins from "../assets/CrackedCoffinsCover.jpg";
 import BindingBlood from "../assets/BindingBloodCover.jpg";
 import HarrowedHearts from "../assets/HarrowedHeartsCover.jpeg";
 import Book from "../components/Book";
+import ContentWarning from '../components/ContentWarning';
 
 // TODO look into geolocation for links redirection
 const retailersCrackedCoffins = [
@@ -93,6 +94,16 @@ const booksData = [
   },
 ];
 
+const contentWarningTitle = "Series Content Warning";
+const contentWarningMessage = [
+  "The Cracked Coffins Series contains subjects and themes readers may find triggering or upsetting. A combination of the following content can be found in each book:",
+  "Alcohol Consumption, Assault, Child Abuse, Consensual Sexual Content (Medium-Explicit), Domestic Abuse, Drug Abuse, Drug Use, Gang Violence, Graphic Violence, Kidnapping, Prostitution, Profanity, Rape & Sexual Violence, Stalking, Suicide.",
+  "This is not an exhaustive list. Please reach out for more information about specific triggers and I will be happy to discuss any additional concerns.",
+  "The Cracked Coffins Series does not promote or romanticize any listed triggering content.",
+  "Consensual Sexual Content (Medium-Explicit) is present in some of the books.",
+
+];
+
 function CrackedCoffinsSeries() {
   return (
     <main>
@@ -109,6 +120,7 @@ function CrackedCoffinsSeries() {
           />
         ))}
       </div>
+      <ContentWarning title={contentWarningTitle} message={contentWarningMessage} />
     </main>
   );
 }
