@@ -1,8 +1,17 @@
 $backgroundColor: Black;
 $fontColor: white;
 $layoutBreakoutSmall: 600px; 
+$layoutBreakoutMedium: 1100px;
 
 body {
     background-color: $backgroundColor;
     color: $fontColor;
+    font-size: 16px;
+
+}
+
+@media only screen and (min-width: $layoutBreakoutSmall) {
+    body {
+        margin: 1rem 2rem;
+    }
 }

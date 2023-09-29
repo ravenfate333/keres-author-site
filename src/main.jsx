@@ -8,6 +8,10 @@ import Contact from "./pages/Contact.jsx";
 import Links from "./pages/Links.jsx";
 import "./styles/global.scss";
 import "./styles/nav.scss";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 //adding to implement react-router-dom
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
