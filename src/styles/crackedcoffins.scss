@@ -64,6 +64,22 @@ main {
   max-width: 60%;
 }
 
+.content-warning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 5rem;
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+
 @media only screen and (min-width: $layoutBreakoutSmall) {
   .book {
     flex-direction: column;
