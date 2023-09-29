@@ -1,14 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types"; // Import PropTypes for other props
+import PropTypes from "prop-types";
+import RetailerButtons from "./RetailerButtons";
 
-// Assuming RetailerButtons already has PropTypes defined in its file
-import RetailerButtons from "../components/RetailerButtons";
-
-function Book({ title, imageSrc, blurb, retailerButtons }) {
+function Book({ title, coverImage, blurb, retailerButtons }) {
+    console.log("Image source:", coverImage);
     return (
       <div className="book">
         <div className={title.toLowerCase().replace(' ', '-')}>
-          <img className="book-cover" src={imageSrc} alt={`${title} Book Cover`} />
+          <img className="book-cover" src={coverImage} alt={`${title} Book Cover`} />
           <div className="info-container">
             <h2>{title}</h2>
             <div className="blurb">
@@ -29,7 +28,7 @@ function Book({ title, imageSrc, blurb, retailerButtons }) {
 
 Book.propTypes = {
   title: PropTypes.string.isRequired,
-  imageSrc: PropTypes.string.isRequired,
+  coverImage: PropTypes.string.isRequired,
   blurb: PropTypes.arrayOf(PropTypes.string).isRequired,
   retailerButtons: PropTypes.arrayOf(
     PropTypes.shape({
