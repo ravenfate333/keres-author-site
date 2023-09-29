@@ -1,4 +1,3 @@
-// adding Link from react-router-dom for internal linking
 import React from "react";
 
 function App() {
