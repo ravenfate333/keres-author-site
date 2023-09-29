@@ -3,12 +3,34 @@ import "../styles/crackedcoffins.scss";
 import CrackedCoffins from "../assets/CrackedCoffinsCover.jpg";
 import BindingBlood from "../assets/BindingBloodCover.jpg";
 import HarrowedHearts from "../assets/HarrowedHeartsCover.jpeg";
-import Button from "@mui/material/Button";
+import RetailerButtons from "../components/RetailerButtons";
 
 function CrackedCoffinsSeries() {
-  const openInNewTab = (url) => {
-    window.open(url, "_blank", "noreferrer");
-  };
+  const retailerButtons = [
+    // Cracked Coffins
+    { label: "Amazon USA", link: "https://www.amazon.com/dp/B08GC77R79" },
+    { label: "Amazon CA", link: "https://www.amazon.ca/dp/B08GC77R79" },
+    { label: "Amazon UK", link: "https://www.amazon.co.uk/dp/B08GC77R79" },
+    {
+      label: "Apple",
+      link: "https://books.apple.com/book/cracked-coffins/id1528388498",
+    },
+    {
+      label: "Barnes & Noble",
+      link: "https://www.barnesandnoble.com/w/cracked-coffins-beronika-keres/1137396822",
+    },
+    {
+      label: "Kobo",
+      link: "https://www.kobo.com/ca/en/ebook/cracked-coffins-1",
+    },
+    {
+      label: "Google Play",
+      link: "https://play.google.com/store/books/details?id=UQ75DwAAQBAJ",
+    },
+    { label: "More Retailers", link: "https://books2read.com/CrackedCoffins/" },
+    
+
+  ];
   return (
     <>
       <body>
@@ -46,80 +68,15 @@ function CrackedCoffinsSeries() {
                       her chance at a future?
                     </p>
                   </div>
+
                   <div className="buy-buttons">
-                  <Button
-                      role="link"
-                      onClick={() =>
-                        openInNewTab("https://www.amazon.com/dp/B08GC77R79")
-                      }
-                      variant="text"
-                    >
-                      Amazon USA
-                    </Button>
-                    <Button
-                      role="link"
-                      onClick={() =>
-                        openInNewTab("https://www.amazon.ca/dp/B08GC77R79")
-                      }
-                      variant="text"
-                    >
-                      Amazon CA
-                    </Button>
-                    <Button
-                      role="link"
-                      onClick={() =>
-                        openInNewTab("https://www.amazon.co.uk/dp/B08GC77R79")
-                      }
-                      variant="text"
-                    >
-                      Amazon UK
-                    </Button>
-                    <Button
-                      role="link"
-                      onClick={() =>
-                        openInNewTab("https://books.apple.com/book/cracked-coffins/id1528388498")
-                      }
-                      variant="text"
-                    >
-                      Apple
-                    </Button>
-                    <Button
-                      role="link"
-                      onClick={() =>
-                        openInNewTab("https://www.barnesandnoble.com/w/cracked-coffins-beronika-keres/1137396822")
-                      }
-                      variant="text"
-                    >
-                      Barnes & Noble
-                    </Button>
-                    <Button
-                      role="link"
-                      onClick={() =>
-                        openInNewTab("https://www.kobo.com/ca/en/ebook/cracked-coffins-1")
-                      }
-                      variant="text"
-                    >
-                      Kobo
-                    </Button>
-                    <Button
-                      role="link"
-                      onClick={() =>
-                        openInNewTab("https://play.google.com/store/books/details?id=UQ75DwAAQBAJ")
-                      }
-                      variant="text"
-                    >
-                      Google Play
-                    </Button>
-                    <Button
-                      role="link"
-                      onClick={() =>
-                        openInNewTab("https://books2read.com/CrackedCoffins/")
-                      }
-                      variant="text"
-                    >
-                      More Retailers
-                    </Button>
-                    
+                    {retailerButtons.map((button, index) => (
+                      <RetailerButtons
+                        key={index}
+                        label={button.label}
+                        link={button.link}
+                      />
+                    ))}
                   </div>
                 </div>
               </div>
