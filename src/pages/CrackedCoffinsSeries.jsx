@@ -9,12 +9,14 @@ const retailersCrackedCoffins = [
   { label: "Amazon USA", link: "https://www.amazon.com/dp/B08GC77R79" },
   { label: "Amazon CA", link: "https://www.amazon.ca/dp/B08GC77R79" },
   { label: "Amazon UK", link: "https://www.amazon.co.uk/dp/B08GC77R79" },
+  // add rest of retailers
 ];
 
 const retailersBindingBlood = [
   { label: "Amazon USA", link: "" },
   { label: "Amazon CA", link: "" },
   { label: "Amazon UK", link: "" },
+  // add rest of retailers
 ];
 
 const retailersHarrowedHearts = [
@@ -24,6 +26,7 @@ const retailersHarrowedHearts = [
     label: "Amazon UK",
     link: "",
   },
+  // add rest of retailers
 ];
 
 const blurbsCrackedCoffins = [
@@ -90,6 +93,7 @@ function CrackedCoffinsSeries() {
             title={book.title}
             coverImage={book.coverImage}
             blurb={book.blurbs}
+            // Add trigger warning section for whole series
             retailerButtons={book.retailerButtons}
           />
         ))}
