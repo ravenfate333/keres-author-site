@@ -5,7 +5,7 @@ import HarrowedHeartsFeature from "../assets/HarrowedHeartsFeature.png";
 
 const items = [
   {
-    image: HarrowedHeartsFeature
+    image: HarrowedHeartsFeature,
   },
   {
     image: SeriesFeature
