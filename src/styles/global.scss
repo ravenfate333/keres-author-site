@@ -5,6 +5,8 @@ $layoutBreakoutMedium: 1100px;
 
 body {
     background-color: $backgroundColor;
+    background-image: url(../assets/samplebackground.jpg);
+    background-position: 100%;
     color: $fontColor;
     font-size: 16px;
 

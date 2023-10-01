@@ -15,7 +15,6 @@ const items = [
 function App() {
   return (
     <>
-      <h1>HOME</h1>
       <div>
         <Carousel items={items} />
       </div>
