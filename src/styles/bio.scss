@@ -1,5 +1,9 @@
 @import "global";
 
+
+.bio {
+    min-height: 100vh;
+}
 .bio-container {
     display: flex;
     flex-direction: column;
