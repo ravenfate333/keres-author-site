@@ -100,7 +100,7 @@ const contentWarningMessage = [
   "Alcohol Consumption & Abuse, Assault, Child Abuse, Domestic Abuse, Drug Abuse, Drug Use, Gang Violence, Graphic Violence, Kidnapping, Prostitution, Profanity, Rape & Sexual Violence, Stalking, Suicide.",
   "This is not an exhaustive list. Please reach out for more information about specific triggers and I will be happy to discuss any additional concerns.",
   "The Cracked Coffins Series does not promote or romanticize any listed triggering content.",
-  "Consensual Sexual Content (Medium-Explicit) is present in some of the books.",
+  "Consensual sexual content (Medium-Explicit) is present in some of the books.",
 
 ];
 
