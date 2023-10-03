@@ -5,7 +5,7 @@ import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faGoodreads } from "@fortawesome/free-brands-svg-icons";
-import bookbub from "../assets/images/BB48x48.png";
+import bookbub from "../assets/images/bookbub.webp";
 
 const amazon = <FontAwesomeIcon icon={faAmazon} />;
 const tiktok = <FontAwesomeIcon icon={faTiktok} />;
