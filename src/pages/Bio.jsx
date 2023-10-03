@@ -5,7 +5,7 @@ import "../styles/bio.scss";
 function Bio() {
   return (
     <>
-      <div>
+      <div className="bio">
         <h1>BIO</h1>
         <div className="bio-container">
           <img

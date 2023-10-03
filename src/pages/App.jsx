@@ -16,7 +16,9 @@ function App() {
   return (
     <>
       <div>
-        <Carousel items={items} />
+        <div>
+          <Carousel items={items} />
+        </div>
       </div>
       <div>put more here</div>
     </>

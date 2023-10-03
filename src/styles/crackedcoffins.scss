@@ -4,10 +4,12 @@ $CrackedCoffins: rgb(121, 52, 55);
 $BindingBlood: rgb(52, 67, 64);
 $HarrowedHearts: rgb(84, 62, 100);
 
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem 0.5rem;
 
   h1 {
     text-align: center;
