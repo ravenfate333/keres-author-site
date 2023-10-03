@@ -20,6 +20,7 @@ function App() {
           <Carousel items={items} />
         </div>
       </div>
+      <div>put more here</div>
     </>
   );
 }
