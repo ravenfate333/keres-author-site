@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer">
         <div className="side-1">
           <div>
-            <h3>Find Me on Social Media!</h3>
+            <h3>Find Me On Social Media!</h3>
             <SocialLinks />
           </div>
           <div className="mailing">
