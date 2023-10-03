@@ -6,7 +6,7 @@ function Bio() {
   return (
     <>
       <div className="bio">
-        <h1>BIO</h1>
+        <h1>About Beronika Keres</h1>
         <div className="bio-container">
           <img
             className="author-image"
