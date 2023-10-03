@@ -1,9 +1,55 @@
 @import "global";
 
 .footer {
-    background-color: black;
-    
-    p {
-        margin-bottom: 0rem;
-    }
+  display: flex;
+  flex-direction: column;
+
+  background-color: $backgroundColor;
+  padding: 0.5rem;
+
+  p {
+    text-align: center;
+    color: $fontColor;
+  }
+
+  a {
+    color: $fontColor;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+
+  .social-links {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    padding: 0rem;
+  }
+}
+
+.mailing {
+  padding: 1rem 1.5rem;
+}
+
+@media only screen and (min-width: $layoutBreakoutMedium) {
+  .footer {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .side-2 {
+    width: 40%;
+  }
 }
