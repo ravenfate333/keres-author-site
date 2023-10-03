@@ -17,9 +17,11 @@ function Footer() {
         site belong to Beronika Keres and are not permitted to be used without
         written permission.
       </p>
-      <div>
-        <p>Area for Newsletter</p>
-      </div>
+      <div
+        className="ml-form-embed"
+        data-account="2083638:r3u1j5u3l4"
+        data-form="5983908:e0s3c3"
+      ></div>
     </>
   );
 }

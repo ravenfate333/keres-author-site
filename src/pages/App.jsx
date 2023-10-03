@@ -8,7 +8,7 @@ const items = [
     image: HarrowedHeartsFeature,
   },
   {
-    image: SeriesFeature
+    image: SeriesFeature,
   },
 ];
 
@@ -18,6 +18,7 @@ function App() {
       <div>
         <Carousel items={items} />
       </div>
+      <div>put more here</div>
     </>
   );
 }
