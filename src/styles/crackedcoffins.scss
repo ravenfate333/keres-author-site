@@ -1,8 +1,8 @@
 @import "global";
 
-$CrackedCoffins: rgb(121, 52, 55);
-$BindingBlood: rgb(52, 67, 64);
-$HarrowedHearts: rgb(84, 62, 100);
+$CrackedCoffins: rgba(121, 52, 56, 0.78);
+$BindingBlood: rgba(52, 67, 64, 0.78);
+$HarrowedHearts: rgb(84, 62, 100, 0.78);
 
 
 main {
@@ -56,6 +56,7 @@ main {
 .buy-buttons {
   display: flex;
   flex-flow: wrap;
+  text-decoration: underline;
 }
 
 .cracked-coffins {
