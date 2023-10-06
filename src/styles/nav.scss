@@ -1,21 +1,5 @@
 @import "global";
 
-.mobile-nav {
-  display: block;
-  width: 100%;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  overflow-x: hidden;
-  background-color: black; /* TODO Overlay nav */
-
-}
-
-.hamburger-react {
-  /* z-index: 999; */
-}
-
 .nav-links {
   display: flex;
   flex-direction: column;
@@ -23,7 +7,6 @@
   color: $fontColor;
   list-style-type: none;
   text-decoration: none;
-  
 
   a {
     text-decoration: none;
@@ -35,16 +18,55 @@
   display: none;
 }
 
-@media only screen and (min-width: $layoutBreakoutSmall) {
+@media only screen and (min-width: $layoutBreakoutMedium) {
   .desktop-nav {
     display: block;
+    padding: 0.1rem 15rem;
+    background-color: $CrackedCoffins;
+  }
+
+  ul {
+    padding-inline-start: 0;
   }
 
   .nav-links {
     flex-direction: row;
+
+    // https://www.30secondsofcode.org/css/s/hover-underline-animation/
+    li {
+      display: inline-block;
+      position: relative;
+      color: white;
+      font-size: 18px;
+    }
+
+    li::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    li:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   }
 
   .mobile-nav {
     display: none;
+  }
+}
+
+@media only screen and (min-width: $layoutBreakoutSmall) {
+  .desktop-nav {
+    padding: 0.1rem 15rem;
+
   }
 }

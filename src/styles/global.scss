@@ -1,22 +1,23 @@
 $backgroundColor: Black;
 $fontColor: white;
-$layoutBreakoutSmall: 600px; 
-$layoutBreakoutMedium: 1100px;
+$CrackedCoffins: rgba(121, 52, 56, 0.78);
+$BindingBlood: rgba(52, 67, 64, 0.78);
+$HarrowedHearts: rgb(84, 62, 100, 0.78);
+$layoutBreakoutSmall: 600px;
+$layoutBreakoutMedium: 1200px;
+
+:root {
+  font-family: "Crimson Text", serif;
+}
 
 body {
-    background-color: $backgroundColor;
-    background-image: url(../assets/samplebackground.jpg);
-    background-attachment: fixed;
-    background-position: 100%;
-    color: $fontColor;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-
+  background-color: $backgroundColor;
+  background-image: url(../assets/samplebackground.jpg);
+  background-attachment: fixed;
+  background-position: 100%;
+  color: $fontColor;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
-@media only screen and (min-width: $layoutBreakoutSmall) {
-    body {
-        
-    }
-}
