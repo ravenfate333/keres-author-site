@@ -108,7 +108,14 @@ export default function MainNavigation() {
     <AppBar position="static" sx={{ backgroundColor: "black" }}>
       <Container maxWidth="lg" disableGutters="true">
         <Toolbar>
-          <Typography variant="h5" sx={{ flexGrow: 1, fontWeight: 500, fontFamily: 'Cinzel Decorative, serif' }}>
+          <Typography
+            variant="h5"
+            sx={{
+              flexGrow: 1,
+              fontWeight: 500,
+              fontFamily: "Cinzel Decorative, serif",
+            }}
+          >
             Beronika Keres
           </Typography>
 
@@ -179,7 +186,15 @@ export default function MainNavigation() {
                   <ListItemIcon>
                     <HomeIcon sx={{ color: "white" }} />
                   </ListItemIcon>
-                  <ListItemText primary="HOME" />
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "Crimson Text, sans",
+                      fontSize: "1.2rem",
+                    }}
+                  >
+                    HOME
+                  </Typography>
                 </ListItemButton>
                 <ListItemButton
                   component={Link}
@@ -190,7 +205,15 @@ export default function MainNavigation() {
                   <ListItemIcon>
                     <AutoStoriesIcon sx={{ color: "white" }} />
                   </ListItemIcon>
-                  <ListItemText primary="THE CRACKED COFFINS SERIES" />
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "Crimson Text, sans",
+                      fontSize: "1.2rem",
+                    }}
+                  >
+                    THE CRACKED COFFINS SERIES
+                  </Typography>
                 </ListItemButton>
                 <ListItemButton
                   component={Link}
@@ -201,7 +224,15 @@ export default function MainNavigation() {
                   <ListItemIcon>
                     <FavoriteIcon sx={{ color: "white" }} />
                   </ListItemIcon>
-                  <ListItemText primary="ABOUT THE AUTHOR" />
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "Crimson Text, sans",
+                      fontSize: "1.2rem",
+                    }}
+                  >
+                    ABOUT THE AUTHOR
+                  </Typography>
                 </ListItemButton>
                 <ListItemButton
                   component={Link}
@@ -212,7 +243,15 @@ export default function MainNavigation() {
                   <ListItemIcon>
                     <EmailIcon sx={{ color: "white" }} />
                   </ListItemIcon>
-                  <ListItemText primary="CONTACT" />
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      fontFamily: "Crimson Text, sans",
+                      fontSize: "1.2rem",
+                    }}
+                  >
+                    CONTACT
+                  </Typography>
                 </ListItemButton>
               </Box>
 
@@ -227,7 +266,12 @@ export default function MainNavigation() {
                   transform: "translate(-50%, 0)",
                 }}
               >
-                <Typography variant="body1" color="white" textAlign={"center"}>
+                <Typography
+                  variant="body1"
+                  color="white"
+                  textAlign={"center"}
+                  sx={{ fontFamily: "Crimson Text, sans", fontSize: "1.2rem" }}
+                >
                   Follow Me On Social Media!
                 </Typography>
                 <SocialLinks />
