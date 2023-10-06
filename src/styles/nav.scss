@@ -7,7 +7,6 @@
   color: $fontColor;
   list-style-type: none;
   text-decoration: none;
-  
 
   a {
     text-decoration: none;
@@ -19,7 +18,7 @@
   display: none;
 }
 
-@media only screen and (min-width: $layoutBreakoutSmall) {
+@media only screen and (min-width: $layoutBreakoutMedium) {
   .desktop-nav {
     display: block;
     padding: 0.1rem 15rem;
@@ -35,14 +34,14 @@
 
     // https://www.30secondsofcode.org/css/s/hover-underline-animation/
     li {
-    display: inline-block;
-    position: relative;
-    color: white;
-    font-size: 18px;
+      display: inline-block;
+      position: relative;
+      color: white;
+      font-size: 18px;
     }
 
     li::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       transform: scaleX(0);
@@ -53,16 +52,21 @@
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
     }
-    
+
     li:hover::after {
       transform: scaleX(1);
       transform-origin: bottom left;
     }
   }
-  
-  
 
   .mobile-nav {
     display: none;
+  }
+}
+
+@media only screen and (min-width: $layoutBreakoutSmall) {
+  .desktop-nav {
+    padding: 0.1rem 15rem;
+
   }
 }
