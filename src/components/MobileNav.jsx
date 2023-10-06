@@ -108,8 +108,8 @@ export default function MainNavigation() {
     <AppBar position="static" sx={{ backgroundColor: "black" }}>
       <Container maxWidth="lg" disableGutters="true">
         <Toolbar>
-          <Typography variant="h5" sx={{ flexGrow: 1, fontWeight: 700 }}>
-            Beronika Keres
+          <Typography variant="h5" sx={{ flexGrow: 1, fontWeight: 500, fontFamily: 'Cinzel Decorative, serif' }}>
+            beronika Keres
           </Typography>
 
           <Box

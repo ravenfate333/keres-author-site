@@ -3,9 +3,12 @@ $fontColor: white;
 $layoutBreakoutSmall: 600px;
 $layoutBreakoutMedium: 1100px;
 
-body {
+:root {
   font-family: "Crimson Text", serif;
   font-family: "EB Garamond", serif;
+}
+
+body {
   background-color: $backgroundColor;
   background-image: url(../assets/samplebackground.jpg);
   background-attachment: fixed;
