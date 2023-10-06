@@ -109,7 +109,7 @@ export default function MainNavigation() {
       <Container maxWidth="lg" disableGutters="true">
         <Toolbar>
           <Typography variant="h5" sx={{ flexGrow: 1, fontWeight: 500, fontFamily: 'Cinzel Decorative, serif' }}>
-            beronika Keres
+            Beronika Keres
           </Typography>
 
           <Box
@@ -201,7 +201,7 @@ export default function MainNavigation() {
                   <ListItemIcon>
                     <FavoriteIcon sx={{ color: "white" }} />
                   </ListItemIcon>
-                  <ListItemText primary="BIO" />
+                  <ListItemText primary="ABOUT THE AUTHOR" />
                 </ListItemButton>
                 <ListItemButton
                   component={Link}

@@ -13,7 +13,7 @@ function DesktopNav() {
           <Link to={'/CrackedCoffins'}>THE CRACKED COFFINS SERIES</Link>
         </li>
         <li>
-          <Link to={'/Bio'}>BIO</Link>
+          <Link to={'/Bio'}>ABOUT THE AUTHOR</Link>
         </li>
         <li>
           <Link to={'/Contact'}>CONTACT</Link>
