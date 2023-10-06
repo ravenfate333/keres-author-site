@@ -16,17 +16,17 @@ function Carousel2() {
   // setting up useEffect to change the image every 5 seconds
   useEffect(() => {
     let timedChange;
-
+    // having it run only if the user has not interacted with the dots
     if (!clicked) {
       timedChange = setInterval(() => {
         setShow((prevShow) => (prevShow === 0 ? 1 : 0));
       }, 5000);
     }
-
+    // clearing the interval so that it doesn't overlap once the user clicks
     return () => clearInterval(timedChange);
   }, [clicked]);
 
-  // setting a function to turn off timedChange and implement user selection
+  // setting a function to turn off useEffect and implement user selection
   const userChange = () => {
     setClicked(true);
     if (show === 0) {
@@ -38,6 +38,7 @@ function Carousel2() {
 
   return (
     <>
+    {/* if show is 0 show the first setup, if it's 1 show the second */}
       {show === 0 ? (
         <>
           <img className="hero-image" src={SeriesFeature} alt="book series" />
