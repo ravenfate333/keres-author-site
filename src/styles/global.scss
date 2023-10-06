@@ -1,22 +1,22 @@
 $backgroundColor: Black;
 $fontColor: white;
-$layoutBreakoutSmall: 600px; 
+$layoutBreakoutSmall: 600px;
 $layoutBreakoutMedium: 1100px;
 
 body {
-    background-color: $backgroundColor;
-    background-image: url(../assets/samplebackground.jpg);
-    background-attachment: fixed;
-    background-position: 100%;
-    color: $fontColor;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-
+  font-family: "Crimson Text", serif;
+  font-family: "EB Garamond", serif;
+  background-color: $backgroundColor;
+  background-image: url(../assets/samplebackground.jpg);
+  background-attachment: fixed;
+  background-position: 100%;
+  color: $fontColor;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (min-width: $layoutBreakoutSmall) {
-    body {
-        
-    }
+  body {
+  }
 }
