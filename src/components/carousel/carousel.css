@@ -1,0 +1,15 @@
+.hero-image{
+    max-width: 100%;
+}
+
+.dots-box{
+    text-align: center;
+}
+
+.dots{
+    font-size: .6rem;
+}
+
+.dots:hover{
+    cursor: pointer;
+}
