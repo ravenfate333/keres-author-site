@@ -33,8 +33,34 @@
   .nav-links {
     flex-direction: row;
 
-   
+    // https://www.30secondsofcode.org/css/s/hover-underline-animation/
+    li {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    }
+
+    li::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    
+    li:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   }
+  
+  
 
   .mobile-nav {
     display: none;
