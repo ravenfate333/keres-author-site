@@ -1,22 +1,12 @@
 import React from "react";
-import SeriesFeature from "../assets/SeriesFeature.png";
-import HarrowedHeartsFeature from "../assets/HarrowedHeartsFeature.png";
 import Carousel2 from "../components/carousel/Carousel2";
-
-const items = [
-  {
-    image: HarrowedHeartsFeature,
-  },
-  {
-    image: SeriesFeature,
-  },
-];
+import "../styles/app.scss";
 
 function App() {
   return (
     <>
       <div>
-        <div>
+        <div className="carousel-container">
           <Carousel2 />
         </div>
       </div>
