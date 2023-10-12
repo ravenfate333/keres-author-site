@@ -10,7 +10,6 @@ function App() {
           <Carousel2 />
         </div>
       </div>
-      <div>put more here</div>
     </>
   );
 }
