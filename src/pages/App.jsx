@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel2 from "../components/carousel/Carousel2";
+import Carousel from "../components/Carousel";
 import "../styles/app.scss";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
         <div className="carousel-container">
-          <Carousel2 />
+          <Carousel />
         </div>
       </div>
     </>

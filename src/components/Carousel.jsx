@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./carousel.css";
+import "../styles/carousel.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
-import SeriesFeature from "../../assets/images/SeriesFeature.webp";
-import HarrowedHeartsFeature from "../../assets/images/HarrowedHeartsFeature.webp";
+import SeriesFeature from "../assets/images/SeriesFeature.webp";
+import HarrowedHeartsFeature from "../assets/images/HarrowedHeartsFeature.webp";
 
 function Carousel2() {
   // setting a state for when the user clicks the dots
