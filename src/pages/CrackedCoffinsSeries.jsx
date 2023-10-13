@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/crackedcoffins.scss";
-import CrackedCoffins from "../assets/CrackedCoffinsCover.jpg";
-import BindingBlood from "../assets/BindingBloodCover.jpg";
-import HarrowedHearts from "../assets/HarrowedHeartsCover.jpeg";
+import CrackedCoffins from "../assets/images/CrackedCoffinsCover.webp";
+import BindingBlood from "../assets/images/BindingBloodCover.webp";
+import HarrowedHearts from "../assets/images/HarrowedHeartsCover.webp";
 import Book from "../components/Book";
 import ContentWarning from '../components/ContentWarning';
 
