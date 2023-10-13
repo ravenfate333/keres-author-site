@@ -1,5 +1,5 @@
 import React from "react";
-import AuthorImage from "../assets/authorphoto.jpg";
+import AuthorImage from "../assets/images/authorphoto.webp";
 import "../styles/bio.scss";
 
 function Bio() {
