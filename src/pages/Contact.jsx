@@ -1,10 +1,11 @@
 import React from "react";
+import ContactUs from "../components/Form";
 
 function Contact() {
   return (
     <>
       <div>
-        <h1>Contact Page Goes Here</h1>
+        <ContactUs />
       </div>
     </>
   );
