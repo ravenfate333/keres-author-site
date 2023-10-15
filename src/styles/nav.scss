@@ -2,7 +2,6 @@
 
 .nav-links {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   color: $fontColor;
   list-style-type: none;
@@ -30,7 +29,6 @@
   }
 
   .nav-links {
-    flex-direction: row;
 
     // https://www.30secondsofcode.org/css/s/hover-underline-animation/
     li {

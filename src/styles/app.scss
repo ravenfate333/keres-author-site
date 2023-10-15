@@ -1,5 +1,35 @@
 @import "global";
 
 .carousel-container {
-    margin: 1rem;
+  margin: 1rem;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0rem 1rem 0.5rem;
+
+  .reviews {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    img {
+      margin: 0rem 0.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: $layoutBreakoutMedium) {
+  .reviews-container {
+    .reviews {
+      flex-direction: row;
+
+      img {
+        width: 30%;
+      }
+    }
+  }
 }
