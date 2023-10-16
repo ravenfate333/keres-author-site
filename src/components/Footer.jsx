@@ -23,7 +23,7 @@ function Footer() {
 
           <div className="vault-container">
             <p>
-              If you enjoy reading indie books, check out
+              If you enjoy reading indie books, check out Indie Book Vault<br /> to find other great authors like Beronika Keres.
             </p>
             <a href="https://indiebookvault.com/">
               <img
@@ -32,7 +32,6 @@ function Footer() {
                 alt="Indie Book Vault Logo"
               />
             </a>
-            <p>to find other great authors like Beronika Keres.</p>
           </div>
         </div>
 

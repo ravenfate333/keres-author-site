@@ -1,7 +1,9 @@
 {
   "name": "author-site",
+  "homepage": "https://www.beronikakeres.com",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Beronika Keres is the fantasy thriller author of The Cracked Coffins Series.",
   "type": "module",
   "scripts": {
     "dev": "vite",

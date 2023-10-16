@@ -37,6 +37,7 @@ main {
 
     p {
       align-self: flex-start;
+
     }
   }
 
@@ -90,6 +91,10 @@ main {
 @media only screen and (min-width: $layoutBreakoutSmall) {
   .content-warning {
     padding: 1rem 5rem;
+
+    p {
+      font-size: 1.125rem;
+    }
   }
 
   .book {
@@ -97,6 +102,10 @@ main {
 
     .book-cover {
       max-width: 50%;
+    }
+
+    p {
+      font-size: 1.125rem;;
     }
   }
 }
